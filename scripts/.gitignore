@@ -1,0 +1,7 @@
+spider/
+data/
+results/
+runs/
+.venv/
+__pycache__/
+*.pyc

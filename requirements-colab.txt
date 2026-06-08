@@ -1,0 +1,12 @@
+# === Stack de TREINO/GERAÇÃO no Google Colab (GPU T4) ===
+# NÃO reinstale torch: use o torch/CUDA que já vem no Colab.
+# Após um treino bem-sucedido, gere o pino definitivo com:  pip freeze > requirements.txt
+transformers==5.10.2
+trl==1.5.1
+peft==0.19.1
+accelerate==1.13.0
+bitsandbytes==0.49.2
+datasets==5.0.0
+deepeval==3.9.9
+sqlparse==0.5.5
+ 
