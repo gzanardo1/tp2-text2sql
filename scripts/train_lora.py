@@ -57,7 +57,7 @@ class TrainConfig:
 
 CONFIGS = {
     "a": TrainConfig(name="a", learning_rate=2e-4, num_train_epochs=1.0),
-    "b": TrainConfig(name="b", learning_rate=1e-4, num_train_epochs=2.0),
+    "b": TrainConfig(name="b", learning_rate=1e-4, num_train_epochs=1.0),
 }
 
 
@@ -108,6 +108,8 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--limit", type=int, default=0,
                     help=">0 limita exemplos de treino (smoke test)")
+    ap.add_argument("--resume", action="store_true",
+                    help="retoma do último checkpoint em --output_dir, se existir")
     args = ap.parse_args()
 
     cfg = CONFIGS[args.config]
@@ -164,16 +166,17 @@ def main():
         gradient_accumulation_steps=args.grad_accum,
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
-        fp16=False,
-        optim = "paged_adamw_32bit",
+        fp16=True,
+        optim="paged_adamw_8bit",
         max_length=args.max_length,
         assistant_only_loss=True,  # loss apenas nos turnos do assistant
         packing=False,             # incompatível com assistant_only_loss
         lr_scheduler_type="cosine",
         warmup_ratio=0.03,
         logging_steps=25,
-        save_strategy="epoch",
-        save_total_limit=2,
+        save_strategy="steps",
+        save_steps=200,            # checkpoint a cada ~3h na T4 (200 * ~54s)
+        save_total_limit=2,        # mantém só os 2 últimos checkpoints (economia de Drive)
         report_to="none",
         seed=args.seed,
         dataset_text_field=None,   # usa `messages` (conversacional)
@@ -191,7 +194,7 @@ def main():
     # Confirma quantos parâmetros são treináveis (deve ser <1% do total)
     trainer.model.print_trainable_parameters()
 
-    trainer.train()
+    trainer.train(resume_from_checkpoint=args.resume or None)
 
     # --- Salva adaptador final + manifest para o relatório -----------------
     trainer.save_model(args.output_dir)
