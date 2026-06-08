@@ -165,7 +165,7 @@ def main():
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
         fp16=True,
-        optim="paged_adamw_8bit",
+        optim = "paged_adamw_32bit",
         max_length=args.max_length,
         assistant_only_loss=True,  # loss apenas nos turnos do assistant
         packing=False,             # incompatível com assistant_only_loss
