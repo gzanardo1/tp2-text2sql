@@ -164,7 +164,7 @@ def main():
         gradient_accumulation_steps=args.grad_accum,
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
-        fp16=True,
+        fp16=False,
         optim = "paged_adamw_32bit",
         max_length=args.max_length,
         assistant_only_loss=True,  # loss apenas nos turnos do assistant
