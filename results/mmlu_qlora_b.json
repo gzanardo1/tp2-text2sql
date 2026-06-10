@@ -1,0 +1,1234 @@
+{
+  "summary": {
+    "model": "Qwen/Qwen2.5-3B-Instruct",
+    "adapter": "runs/qlora_b",
+    "label": "runs/qlora_b",
+    "overall_accuracy": 0.6533333333333333,
+    "by_category": {
+      "STEM": {
+        "subject": "college_computer_science",
+        "accuracy": 0.64,
+        "correct": 32,
+        "total": 50
+      },
+      "Humanidades": {
+        "subject": "philosophy",
+        "accuracy": 0.58,
+        "correct": 29,
+        "total": 50
+      },
+      "Ciências Sociais": {
+        "subject": "high_school_macroeconomics",
+        "accuracy": 0.74,
+        "correct": 37,
+        "total": 50
+      }
+    },
+    "seed": 42,
+    "n_per_category": 50,
+    "n_few_shot": 5,
+    "load_in_4bit": true
+  },
+  "details": [
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Let G = (V, E) be a finite directed acyclic graph with |E| > 0. Which of the following must be true?\nI. G has a vertex w",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial t",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Two expressions E and F are said to be unifiable if there are substitutions for the variables of E and F that make the e",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following statements about Ethernets is typically FALSE?",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following is (are) true about virtual memory systems that use pages?\nI. The virtual address space can be la",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following conditions can be expressed by a Boolean formula in the Boolean variables p_1, p_2, p_3, p_4 and ",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "If a malicious process is granted temporary administrator-level access to a system",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following algorithms has running time Θ(n^2) in the worst case but Θ(n log n) on average?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Let G = (V, E) be a connected, undirected graph, and let a and b be two distinct vertices in V. Let P_1 be the problem o",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Two processors, M-5 and M-7, implement the same instruction set. Processor M-5 uses a 5-stage pipeline and a clock cycle",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "In the NoNicks operating system, the time required by a single file-read operation has four nonoverlapping components:\nd",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "\"Magic memory\"' has two operations: Read and Clear. Both are indivisible and mutually exclusive. Clear sets the magic me",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Consider a computer system in which processes can request and release one or more resources. Once a process has been gra",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "A \"strictly binary tree\" is a binary tree in which every node that is not a leaf has two children. Suppose that for a cl",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following characteristics of a programming language is best specified using a context-free grammar?",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Suppose that a certain software product has a mean time between failures of 10,000 hours and has a mean time to repair o",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following statements about horizontal versus vertical microarchitecture is (are) true?\nI. Programs for hori",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "In systems with support for automatic memory management, a garbage collector typically has the responsibility for reclai",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Any set of Boolean operators that is sufficient to represent all Boolean expressions is said to be complete. Which of th",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "In a pipelined RISC computer where all arithmetic instructions have the same CPI (cycles per instruction), which of the ",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Let M be a single-tape, deterministic Turing machine with tape alphabet {blank,0,1}, and let C denote the (possibly infi",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "A particular parallel program computation requires 100 seconds when executed on a single processor. If 40 percent of thi",
+      "predicted": "B",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Languages with a structure that implements abstract data types (e.g., a C++ class) can prevent access to components of t",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "An Euler circuit of an undirected graph is a circuit in which each edge of the graph appears exactly once. Which of the ",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following statements describe(s) properties of a purely segmented memory system?\nI. It divides memory into ",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following instruction-set features is NOT generally considered an obstacle to aggressive pipelining of an i",
+      "predicted": "B",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "A particular disk unit uses a bit string to record the occupancy or vacancy of its tracks, with O denoting vacant and 1 ",
+      "predicted": "C",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following is the name of the data structure in a compiler that is responsible for managing information abou",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Let A be a finite set with m elements, and let B be a finite set with n elements. The number of distinct functions mappi",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "The hit ratio of a cache memory is the percentage of accesses (reads and writes) for which data are found in the cache. ",
+      "predicted": "D",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Consider the representation of six-bit numbers by two's complement, one's complement, or by sign and magnitude. In which",
+      "predicted": "C",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "The access matrix approach to protection has the difficulty that",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following problems can be solved by a standard greedy algorithm?\nI. Finding a minimum spanning tree in an u",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following decimal numbers has an exact representation in binary notation?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Mergesort works by splitting a list of n numbers in half, sorting each half recursively, and merging the two halves. Whi",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following is NOT a property of bitmap graphics?",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following considerations applies (apply) to choosing the page size in a paging system?\nI. An advantage of l",
+      "predicted": "C",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "In multiprogrammed systems it is advantageous if some programs such as editors and compilers can be shared by several us",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "The language {ww | w in (0 + 1)*} is",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Of the following, which best characterizes computers that use memory-mapped I/O?",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "At time 0, five jobs are available for execution on a single processor, with service times of 25, 15, 5, 3, and 2 time u",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Many cryptographic protocols base their security on assumptions about the computational difficulty of integer factorizat",
+      "predicted": "C",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Local caching of files is common in distributed file systems, but it has the disadvantage that",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Consider the collection of all undirected graphs with 10 nodes and 6 edges. Let M and m, respectively, be the maximum an",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Two single-user workstations are attached to the same local area network. On one of these workstations, file pages are a",
+      "predicted": "C",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "An integer c is a common divisor of two integers x and y if and only if c is a divisor of x and c is a divisor of y. Whi",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "A 3-way, set-associative cache is",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + ",
+      "predicted": "C",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "Which of the following language features requires that stack-based storage allocation be used rather than static allocat",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "STEM",
+      "subject": "college_computer_science",
+      "question": "You want to cluster 7 points into 3 clusters using the k-Means Clustering algorithm. Suppose after the first iteration, ",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Feinberg claims that most arguments for psychological egoism:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Which of the following ideas is not associated with the stance of situation ethics?",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "The version of utilitarianism that Brandt defends makes rightness a function of:",
+      "predicted": "D",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "In Cicero’s view, each person is invested by Nature with two characters:",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Kant claims that the natural purpose of reason is to:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Anscombe claims that on Sidgwick’s view, the badness of an action must be estimated in light of:",
+      "predicted": "C",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Aesthetics deals with objects that are_____.",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Hume, morality is ultimately based on:",
+      "predicted": "C",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Aristotle says  that what makes things be what they are--their essence--does not exist apart from individ-uals that exis",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Epicurus claims that all other virtues spring from:",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Aristotle claims that:",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Stevenson, empirical methods:",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "In Aquinas’s view, man’s ultimate happiness consists in:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Aristotle ends the Ethics with a segue to a discussion of:",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Like most rationalists, Plato defines knowledge as justified true belief.  In terms of this definition, we might be able",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Feinberg claims that when people are hungry, they typically desire:",
+      "predicted": "C",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Stevenson claims that the primary use of ethical judgments is to:",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Craig says an actually infinite number of things _____.",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Stevenson’s primary aim in this paper is to:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Da Vinci's Mona Lisa is_____.",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Taurek claims that if faced with the choice between saving the life of X or the arm of Y:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Hobbes claims that all of the laws of nature can be summarized in the precept:",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Hobbes defines injustice as:",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Sartre, there is at least one being in whom existence precedes essence, and this being is _____.",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Nagel claims that the problem of moral luck is closely connected to the problem of:",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Rawls, we can enter the original position:",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Hare claims that all moral arguments are:",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Nussbaum claims that in cross-cultural communication, inhabitants of different conceptual schemes tend to view their int",
+      "predicted": "A",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "How many categories of ethical principles do Diener and Crandell refer to?",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "In response to the argument that famine relief is counterproductive because it leads to overpopulation, Singer claims th",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Augustine holds that we can never err:",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Philo says the analogy that Cleanthes uses to make his case is _____.",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "In the case of the debtors, the moral argument against imprisoning A relies on:",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "To explain the notion of a prima facie duty, Ross draws an analogy with:",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Nagel claims that prior to reflection, it is plausible that people cannot be morally assessed for:",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Descartes says that, for all he knows, he may be _____.",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "An important formal characteristic of art is_____.",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Socrates, the value or quality of one's life depends on understanding the principles of, or basic rationale",
+      "predicted": "D",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Baier claims that for a rule to belong the morality of a group, the rule must be:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Feinberg claims that the best way to pursue happiness is to:",
+      "predicted": "A",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "For Plato, ordinary sensible objects exist and are knowable as examples or instances of Ideas or \"Forms\" that do not exi",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "The view that art is defined by its form is known as _____.",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Hume, reason:",
+      "predicted": "C",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Anscombe, “moral obligation” currently signifies:",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Ross claims that we learn of our prima facie duties:",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "According to Epicurus, a law is unjust when:",
+      "predicted": "A",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "The four main divisions of philosophy are metaphysics, epistemology, axiology, and _____.",
+      "predicted": "C",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Mill claims that one of the strongest objections to utilitarianism is drawn from the idea of:",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "A prominent view is that an object has aesthetic value if it _____.",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Humanidades",
+      "subject": "philosophy",
+      "question": "Plato's view is that true beauty is _____.",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Among those hurt by inflation are I.   borrowers at fixed interest rates II.   individuals on fixed incomes III.   those",
+      "predicted": "B",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The \"crowding-out\" effect is the result of",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If the demand for our exports rises while our tastes for foreign goods falls off then",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "To close a recessionary gap",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following most likely increases aggregate demand in the United States?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following is a consequence of a protective tariff on imported steel?",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The appropriate fiscal policy to remedy a recession",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following would reduce economic growth?",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following is characteristic of a centrally planned economic system?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following is most likely to produce stronger economic growth over time?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following events most likely increases real GDP?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following is an example of contractionary monetary policy?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Stagflation most likely results from",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following would not be an example of contractionary fiscal policy?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If nominal GDP equals $6000 and the GDP deflator equals 200 then real GDP equals",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The FED's Board of Governors has members each serving -year terms.",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If in a given year the government collects more money in net taxes than it spends there would exist",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Suppose transfer payments are greater than Social Security contributions corporate taxes and retained earnings combined.",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Private industry can promote economic growth by",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "When the value of the U.S. dollar appreciates relative to other currencies which of the following is the most likely to ",
+      "predicted": "A",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "A decrease in the price of a particular product will result in",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The government of a country decides to increase government spending and taxes by the same amount in order to keep a bala",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "When both short-run aggregate supply and aggregate demand increase which of the following can be said for certain?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "All else equal when the United States exports more goods and services",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following results from stagflation?",
+      "predicted": "A",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "A stronger stock market is likely to cause which of the following changes in the consumption function and aggregate dema",
+      "predicted": "A",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "When a large increase in aggregate demand has an even greater increase in real GDP economists refer to this as",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following is a component of the M 1 measure of money supply?",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The U.S. economy currently suffers a recessionary gap and a budget deficit exists. If the government wishes to fix the r",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "What does the presence of discouraged workers do to the measurement of the unemployment rate?",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which component of a nation's balance of payments recognizes the purchase and sale of real and financial assets between ",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "In the equation GDP = C + I + G + X X stands for",
+      "predicted": "C",
+      "correct": "C",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If the cost of the basket of goods and services the Bureau of Labor Statistics uses to calculate the consumer price inde",
+      "predicted": "B",
+      "correct": "D",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Assuming there is no statistical discrepancy a trade surplus must be offset elsewhere in the",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following likely results in a permanent increase in a nation's productive capacity?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Suppose the President plans to cut taxes for consumers and also plans to increase spending on the military. How does thi",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Output in country A is 1200 units and its population is 100 persons. Output in country B is 2400 units and its populatio",
+      "predicted": "B",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Every choice results in a foregone best alternative which economists call the",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following statements is true?",
+      "predicted": "D",
+      "correct": "B",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "When the United States places an import quota on imported sugar we expect which of the following effects?",
+      "predicted": "A",
+      "correct": "A",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following would shift the aggregate demand curve to the right?",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Suppose that an expansionary fiscal policy leads to a large increase in real output and a small increase in the price le",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following are harmed by unexpectedly high rates of inflation?",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "To close an expansionary gap",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Operating in the intermediate range of the aggregate supply curve an increase in aggregate demand results in an increase",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "The term \"menu costs\" refers to",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Suppose the exchange rates are 0.5 British Pound per dollar; 10 Mexican Pesos per dollar; and 100 Chinese Yuan per dolla",
+      "predicted": "B",
+      "correct": "C",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If Real GDP = $200 billion and the price index = 200 Nominal GDP is",
+      "predicted": "B",
+      "correct": "B",
+      "ok": true
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "If the Federal Reserve was concerned about the \"crowding-out\" effect they could engage in",
+      "predicted": "C",
+      "correct": "A",
+      "ok": false
+    },
+    {
+      "category": "Ciências Sociais",
+      "subject": "high_school_macroeconomics",
+      "question": "Which of the following policies might the Fed adopt to counter a recession?",
+      "predicted": "D",
+      "correct": "D",
+      "ok": true
+    }
+  ]
+}

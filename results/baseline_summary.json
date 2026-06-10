@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "adapter": null,
+  "n": 1034,
+  "execution_accuracy": 0.4912959381044487,
+  "seed": 42,
+  "load_in_4bit": true,
+  "worst_dbs": {
+    "tvshow": 0.242,
+    "car_1": 0.25,
+    "real_estate_properties": 0.25,
+    "wta_1": 0.274,
+    "world_1": 0.308,
+    "battle_death": 0.312,
+    "museum_visit": 0.389,
+    "student_transcripts_tracking": 0.487,
+    "concert_singer": 0.489,
+    "network_1": 0.5
+  }
+}

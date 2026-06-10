@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "adapter": "runs/qlora_a",
+  "n": 1034,
+  "execution_accuracy": 0.6402321083172147,
+  "seed": 42,
+  "load_in_4bit": true,
+  "worst_dbs": {
+    "car_1": 0.272,
+    "world_1": 0.475,
+    "real_estate_properties": 0.5,
+    "battle_death": 0.5,
+    "dog_kennels": 0.512,
+    "tvshow": 0.516,
+    "wta_1": 0.532,
+    "pets_1": 0.548,
+    "student_transcripts_tracking": 0.551,
+    "museum_visit": 0.667
+  }
+}
